@@ -1,0 +1,9 @@
+{
+    "name": "tomek2855/form-validation",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "require": {}
+}
