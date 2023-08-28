@@ -30,7 +30,7 @@ $request->setData([
 ]);
 test_request($request);
 
-// Error hidden field not empty
+// Error Hidden field must not be filled
 echo '<br>Test hidden field not empty';
 $request->setData([
     'field_1' => 'value',
@@ -42,7 +42,7 @@ test_request($request);
 session_destroy();
 session_start();
 
-// Error request limit exceeded
+// Error Requests limit exceeded
 echo '<br>Test requests limit';
 $request->setData([
     'field_1' => 'value',
